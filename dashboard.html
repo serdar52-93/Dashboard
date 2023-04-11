@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="content-Type" content="text/html; utf-8" />
+    <meta name="robots" content="NOINDEX,NOFOLLOW" />
+    <meta name="description" content="Dies ist die Lösung zur Übung" />
+    <meta name="keywords" content="ein Dashboard im Browser" />
+    <meta name="author" content="Serdar Sadikoglu" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">          
+        
+	<title>Dashboard DB</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<img src="db.png" alt="dblogo" height="70">
+	<h1>Deutsche Bahn</h1>
+
+	<form>
+		<div class="form-group">
+			<label for="depart"> Bahnhofsauswahl :</label>
+			<select class="form-control" id="depart" name="depart">
+				<option value="">Bitte wählen</option>
+				<option value="berlin">Berlin</option>				
+				<option value="stuttgart">Stuttgart</option>
+				<option value="ulm">Ulm</option>
+			</select>
+		</div>	
+		
+		<div class="form-group">
+			<label for="departure-time">Abfahrtszeit :</label>
+			<input type="time" class="form-control" id="departure-time" name="departure-time">
+		</div>
+
+		<div class="form-group">
+			<label for="arrival-time">Ankunftszeit :</label>
+			<input type="time" class="form-control" id="arrival-time" name="arrival-time">
+		</div>
+
+		<div class="form-group">
+			<label for="track"> Gleisauswahl :</label>
+			<select class="form-control" id="track" name="track">
+				<option value="">Bitte wählen</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+				<option value="13">13</option>
+				<option value="14">14</option>
+				<option value="15">15</option>
+				<option value="16">16</option>
+				<option value="17">17</option>
+				<option value="18">18</option>
+				<option value="19">19</option>
+				<option value="20">20</option>				
+			</select>
+		</div>
+		
+		<button type="submit" class="btn">Suchen</button>
+		
+	</form>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="script.js"></script>
+</body>
+
+</html>
