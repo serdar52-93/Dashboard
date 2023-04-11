@@ -1,15 +1,15 @@
 $(document).ready(function() {
 	$('form').submit(function(event) {
-	  event.preventDefault(); // Empêche le formulaire de se soumettre normalement
+	  event.preventDefault(); // Verhindert, dass das Formular normal gesendet wird
   
-	  // Récupère les valeurs sélectionnées dans le formulaire
+	  // Ruft die im Formular ausgewählten Werte ab
 	  var selectedDeparture = $('#depart').val();
 	  
   
-	  // Construit l'URL de la page à afficher en fonction des valeurs sélectionnées
+	  // Erstellt die URL der anzuzeigenden Seite basierend auf den ausgewählten Werten
 	  var url = selectedDeparture + '.html?track=';
   
-	  // Redirige l'utilisateur vers la page correspondante
+	  // Leitet den Benutzer auf die entsprechende Seite weiter
 	  window.location.href = url;
 	});
   });

@@ -3,12 +3,12 @@ const app = express();
 
 app.use(express.static(__dirname));
 
-// Définit la route pour la page de recherche
+// Legt die Route für die Suchseite fest
 app.get('/', function(req, res) {
   res.sendFile(__dirname + '/dashboard.html');
 });
 
-// Définit la route pour les pages de résultat
+// Definiert die Route für Ergebnisseiten
 app.get('/:depart.html', function(req, res) {
   var selectedDeparture = req.params.depart;
   
@@ -16,7 +16,7 @@ app.get('/:depart.html', function(req, res) {
   res.sendFile(__dirname + '/' + filename);
 });
 
-// Lance le serveur sur le port 3000
+// Starten Sie den Server auf Port 3000
 app.listen(4000, function() {
-  console.log('Serveur démarré sur le port 4000');
+  console.log('Server auf Port 4000 gestartet');
 });
